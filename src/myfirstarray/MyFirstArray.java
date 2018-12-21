@@ -15,22 +15,20 @@ public class MyFirstArray {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int n, sum = 0;
+        String n;
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        n = s.nextInt();
-        int a[] = new int[n];
-        System.out.println("Enter all the elements: ");
-        for(int i = 0; i < n; i++)
+        System.out.print("Enter word: ");
+        n = s.next();
+        char[] a = n.toCharArray();
+        
+        //for(int i = 0; i < n; i++)
+        //{
+        //    a[i] = s.n
+        //}
+        for(int i = n.length()-1; i >= 0; i--)
         {
-            a[i] = s.nextInt();
-            sum = sum + a[i];
+            System.out.println("Letter: " +a[i]);
         }
-        for(int i = n-1; i >= 0; i--)
-        {
-            System.out.println(a[i]);
-        }
-        System.out.println("Sum: " + sum);
     }
     
 }
